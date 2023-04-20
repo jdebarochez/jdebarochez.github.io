@@ -5,7 +5,7 @@
     "dev": "nuxi dev",
     "generate": "nuxi generate",
     "preview": "nuxi preview",
-    "deploy": "push-dir --dir=.output/public --branch=gh-pages --cleanup"
+    "deploy": "touch .output/public/.nojekyll && push-dir --dir=.output/public --branch=gh-pages --cleanup"
   },
   "devDependencies": {
     "nuxt": "^3.3.3",
