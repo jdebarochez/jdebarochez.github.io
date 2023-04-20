@@ -1,14 +1,14 @@
 {
   "private": true,
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
+    "build": "nuxi build",
+    "dev": "nuxi dev",
+    "generate": "nuxi generate",
+    "preview": "nuxi preview",
     "deploy": "push-dir --dir=.output/public --branch=gh-pages --cleanup"
   },
   "devDependencies": {
-    "nuxt": "^3.3.1",
+    "nuxt": "^3.3.3",
     "@nuxt-themes/alpine": "^1.5.0",
     "push-dir": "^0.4.1"
   }
