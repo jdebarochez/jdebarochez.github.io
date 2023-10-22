@@ -12,5 +12,5 @@
     "nuxt": "^3.7.4",
     "push-dir": "^0.4.1"
   },
-  "packageManager": "yarn@3.6.3"
+  "packageManager": "yarn@4.0.0"
 }
