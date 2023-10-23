@@ -1176,7 +1176,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt-themes/alpine@npm:^1.6.3":
+"@nuxt-themes/alpine@npm:^1.6.4":
   version: 1.6.4
   resolution: "@nuxt-themes/alpine@npm:1.6.4"
   dependencies:
@@ -7608,7 +7608,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuxt@npm:^3.7.4":
+"nuxt@npm:^3.8.0":
   version: 3.8.0
   resolution: "nuxt@npm:3.8.0"
   dependencies:
@@ -8972,8 +8972,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    "@nuxt-themes/alpine": "npm:^1.6.3"
-    nuxt: "npm:^3.7.4"
+    "@nuxt-themes/alpine": "npm:^1.6.4"
+    nuxt: "npm:^3.8.0"
     push-dir: "npm:^0.4.1"
   languageName: unknown
   linkType: soft
