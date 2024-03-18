@@ -8,9 +8,9 @@
     "deploy": "touch .output/public/.nojekyll && push-dir --dir=.output/public --branch=gh-pages --cleanup"
   },
   "devDependencies": {
-    "@nuxt-themes/alpine": "^1.6.4",
-    "nuxt": "^3.8.0",
+    "@nuxt-themes/alpine": "^1.6.6",
+    "nuxt": "^3.11.1",
     "push-dir": "^0.4.1"
   },
-  "packageManager": "yarn@4.0.0"
+  "packageManager": "yarn@4.1.1"
 }
