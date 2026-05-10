@@ -82,6 +82,7 @@ async function main() {
   await writeFile('./dist/404.html', notFoundHtml, 'utf-8')
 
   await cp(path.join(__dirname, 'assets'), './dist/assets', { recursive: true })
+  await cp(path.join(__dirname, 'public'), './dist/', { recursive: true })
   await writeFile('./dist/.nojekyll', '')
 }
 
