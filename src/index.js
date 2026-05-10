@@ -20,7 +20,9 @@ function parseFrontmatter(md) {
 }
 
 function renderPage(header, menu, content, styles) {
-  return `<!DOCTYPE html><html lang="en"><head>${header}<style>${styles}</style></head><body>${menu}<main>${content}</main></body></html>`
+  const skipLink = '<a href="#main-content" class="skip-link">Skip to content</a>'
+  const footer = '<footer><p>&copy; 2026 Jean</p></footer>'
+  return `<!DOCTYPE html><html lang="en"><head>${header}<style>${styles}</style></head><body>${skipLink}${menu}<main id="main-content">${content}</main>${footer}</body></html>`
 }
 
 async function main() {
@@ -56,7 +58,13 @@ async function main() {
       )
 
     const slug = file.replace(/^\d+\./, '').replace('.md', '')
-    const html = renderPage(articleHeader, menu, `<article>${bodyHtml}</article>`, styles)
+    const backLink = '<nav aria-label="Breadcrumb"><a href="/">&larr; Home</a></nav>'
+    const html = renderPage(
+      articleHeader,
+      menu,
+      `${backLink}<article>${bodyHtml}</article>`,
+      styles,
+    )
     await writeFile(`./dist/articles/${slug}.html`, html, 'utf-8')
 
     articles.push({ slug, title, description, date: data.date })
@@ -77,8 +85,13 @@ async function main() {
   const homeHtml = renderPage(header, menu, homeContent, styles)
   await writeFile('./dist/index.html', homeHtml, 'utf-8')
 
-  const notFoundContent = '<h1>Got lost?</h1><p>Open an issue on <a href="https://github.com/jdebarochez/jdebarochez.github.io/issues/new" target="_blank" rel="noopener noreferrer">GitHub</a> to let me know.</p>'
-  const notFoundHtml = renderPage(header, menu, notFoundContent, styles)
+  const notFoundContent =
+    '<h1>Got lost?</h1><p>Open an issue on <a href="https://github.com/jdebarochez/jdebarochez.github.io/issues/new" target="_blank" rel="noopener noreferrer">GitHub (opens in new tab)</a> to let me know.</p>'
+  const notFoundHeader = header.replace(
+    "<title>Jean's blog</title>",
+    "<title>404 - Page not found - Jean's blog</title>",
+  )
+  const notFoundHtml = renderPage(notFoundHeader, menu, notFoundContent, styles)
   await writeFile('./dist/404.html', notFoundHtml, 'utf-8')
 
   await cp(path.join(__dirname, 'assets'), './dist/assets', { recursive: true })
