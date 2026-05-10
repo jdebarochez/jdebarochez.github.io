@@ -1,0 +1,71 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  display: flex;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+.sidebar {
+  width: 260px;
+  padding: 2rem;
+  background: #f5f5f5;
+  flex-shrink: 0;
+  border-right: 1px solid #e0e0e0;
+}
+.sidebar h1 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+.sidebar nav { margin-bottom: 1.5rem; }
+.sidebar nav ul { list-style: none; }
+.sidebar nav a {
+  display: block;
+  padding: 0.3rem 0;
+  color: #555;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+.sidebar nav a:hover { color: #000; text-decoration: underline; }
+.social p { font-size: 0.85rem; color: #777; margin-bottom: 0.5rem; }
+.social a { color: #555; }
+.social a:hover { color: #000; }
+.social svg { width: 1.2em; height: 1.2em; vertical-align: middle; }
+.social > div { display: flex; gap: 0.75rem; }
+main {
+  flex: 1;
+  padding: 2.5rem;
+  max-width: 720px;
+}
+article h2 { margin: 1.5rem 0 0.5rem; }
+article p { margin-bottom: 1rem; }
+article ul, article ol { margin: 0.5rem 0 1rem 1.5rem; }
+article a { color: #0066cc; }
+.article-list { list-style: none; }
+.article-list li { margin-bottom: 1.5rem; }
+.article-list a { font-size: 1.1rem; font-weight: 500; color: #0066cc; text-decoration: none; }
+.article-list a:hover { text-decoration: underline; }
+.article-list .date { font-size: 0.85rem; color: #888; }
+code {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', Consolas, monospace;
+  font-size: 0.9em;
+  background: #f0f0f0;
+  padding: 0.15em 0.4em;
+  border-radius: 3px;
+}
+pre {
+  background: #f7f7f7;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 1rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+pre code {
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  font-size: 0.85em;
+}

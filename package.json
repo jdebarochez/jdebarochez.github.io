@@ -1,16 +1,11 @@
 {
   "private": true,
+  "type": "module",
   "scripts": {
-    "build": "nuxi build",
-    "dev": "nuxi dev",
-    "generate": "nuxi generate",
-    "preview": "nuxi preview",
-    "deploy": "touch .output/public/.nojekyll && push-dir --dir=.output/public --branch=gh-pages --cleanup"
+    "build": "node ./src/index.js"
   },
   "devDependencies": {
-    "@nuxt-themes/alpine": "^1.6.4",
-    "nuxt": "^3.8.0",
-    "push-dir": "^0.4.1"
+    "marked": "18.0.3"
   },
-  "packageManager": "yarn@4.0.0"
+  "packageManager": "yarn@4.14.1"
 }
