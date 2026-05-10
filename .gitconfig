@@ -1,3 +1,7 @@
 [hook "spell-check"]
   event = pre-push
   command = yarn spell-check
+
+[hook "format-check"]
+  event = pre-commit
+  command = yarn fmt:check

@@ -2,10 +2,5 @@
   "version": "0.2",
   "language": "en",
   "files": ["src/articles/**/*.md"],
-  "words": [
-    "Bytesize",
-    "Magnorsky",
-    "Montalion",
-    "Structurizr"
-  ]
+  "words": ["Bytesize", "Magnorsky", "Montalion", "Structurizr"]
 }

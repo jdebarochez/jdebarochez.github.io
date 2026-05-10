@@ -3,11 +3,14 @@
   "type": "module",
   "scripts": {
     "build": "node ./src/index.js",
-    "spell-check": "cspell \"src/articles/**/*.md\""
+    "spell-check": "cspell \"src/articles/**/*.md\"",
+    "fmt": "yarn oxfmt",
+    "fmt:check": "yarn oxfmt --check"
   },
   "devDependencies": {
     "cspell": "10.0.0",
-    "marked": "18.0.3"
+    "marked": "18.0.3",
+    "oxfmt": "^0.48.0"
   },
   "packageManager": "yarn@4.14.1"
 }
