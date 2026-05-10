@@ -28,6 +28,8 @@ jobs:
           cache: 'yarn'
       - name: Install dependencies
         run: yarn install --immutable
+      - name: Spell check articles
+        run: yarn spell-check
       - name: Build static blog
         run: node src/index.js
       - name: Upload artifact

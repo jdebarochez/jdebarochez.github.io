@@ -2,9 +2,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node ./src/index.js"
+    "build": "node ./src/index.js",
+    "spell-check": "cspell \"src/articles/**/*.md\""
   },
   "devDependencies": {
+    "cspell": "10.0.0",
     "marked": "18.0.3"
   },
   "packageManager": "yarn@4.14.1"

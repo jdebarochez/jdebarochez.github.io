@@ -1,0 +1,3 @@
+[hook "spell-check"]
+  event = pre-push
+  command = yarn spell-check
