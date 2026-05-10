@@ -101,18 +101,7 @@ pre code {
     margin-bottom: 0;
     flex: 1;
   }
-  .sidebar nav {
-    margin-bottom: 0;
-    width: 100%;
-    display: flex;
-    gap: 0.5rem;
-  }
-  .sidebar nav ul {
-    display: flex;
-    gap: 1rem;
-  }
-  .sidebar nav a { padding: 0.2rem 0; font-size: 0.9rem; }
-  .social { display: none; }
+
   main {
     padding: 1.25rem;
     max-width: 100%;

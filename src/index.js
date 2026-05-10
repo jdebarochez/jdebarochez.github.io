@@ -77,7 +77,7 @@ async function main() {
   const homeHtml = renderPage(header, menu, homeContent, styles)
   await writeFile('./dist/index.html', homeHtml, 'utf-8')
 
-  const notFoundContent = '<h1>Got lost?</h1><p>Tell me what you were looking for <a href="/contact">here</a>.</p>'
+  const notFoundContent = '<h1>Got lost?</h1><p>Open an issue on <a href="https://github.com/jdebarochez/jdebarochez.github.io/issues/new" target="_blank" rel="noopener noreferrer">GitHub</a> to let me know.</p>'
   const notFoundHtml = renderPage(header, menu, notFoundContent, styles)
   await writeFile('./dist/404.html', notFoundHtml, 'utf-8')
 
