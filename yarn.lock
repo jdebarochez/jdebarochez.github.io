@@ -744,7 +744,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cspell@npm:^10.0.0":
+"cspell@npm:10.0.0":
   version: 10.0.0
   resolution: "cspell@npm:10.0.0"
   dependencies:
@@ -899,7 +899,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    cspell: "npm:^10.0.0"
+    cspell: "npm:10.0.0"
     marked: "npm:18.0.3"
   languageName: unknown
   linkType: soft
