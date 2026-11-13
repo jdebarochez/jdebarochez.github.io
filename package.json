@@ -8,9 +8,9 @@
     "fmt:check": "yarn oxfmt --check"
   },
   "devDependencies": {
-    "cspell": "10.0.0",
-    "marked": "18.0.3",
-    "oxfmt": "^0.48.0"
+    "cspell": "10.5.0",
+    "marked": "18.2.0",
+    "oxfmt": "^0.78.0"
   },
-  "packageManager": "yarn@4.14.1"
+  "packageManager": "yarn@4.18.1"
 }
